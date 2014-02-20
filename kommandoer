@@ -1,0 +1,28 @@
+
+// Vise package.json
+
+npm install
+
+// Vise bower.json
+bower install jquery --save
+
+// vise fram hvordan man updater
+bower update
+
+// vise frem jade
+Se på en index.html ... og hvordan den kan brytes opp.
+
+// vise frem less
+scheme.less
+
+// vise fram require.js
+ComputasDagen.js
+... og så UtilityBelt.js
+
+localhost:1337
+
+// vise frem Grunt watch
+grunt watch
+
+// vise frem byggingen av en app
+grunt build

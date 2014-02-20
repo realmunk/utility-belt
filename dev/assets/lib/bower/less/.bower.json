@@ -1,0 +1,28 @@
+{
+  "name": "less",
+  "version": "1.6.2",
+  "main": "./dist/less-1.6.2.js",
+  "ignore": [
+    "**/.*",
+    "benchmark",
+    "bin",
+    "build",
+    "lib",
+    "test",
+    "*.md",
+    "LICENSE",
+    "Gruntfile.js",
+    "package.json",
+    "bower.json"
+  ],
+  "homepage": "https://github.com/less/less",
+  "_release": "1.6.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.6.2",
+    "commit": "e6f7e1e49f33705cf2bea5e392abc1cbbd55eab0"
+  },
+  "_source": "git://github.com/less/less.git",
+  "_target": "*",
+  "_originalSource": "less"
+}

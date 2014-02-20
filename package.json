@@ -1,0 +1,36 @@
+{
+  "name": "utility-belt-for-front-end",
+  "version": "1.0.0",
+  "description": "Demonstration package for an utility-belt. Made especially for front-end developers.",
+  "main": "server.js",
+  "scripts": {
+    "start": "supervisor -w dev/server.js dev/server.js",
+    "watch": "grunt watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "bower": "*",
+    "express": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-less": "0.9.0",
+    "grunt-contrib-watch": "0.5.3",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-requirejs": "*",
+    "jade": "*",
+    "supervisor": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krsjan/framsia.git"
+  },
+  "author": "Krsjan",
+  "bugs": {
+    "url": "https://github.com/krsjan/framsia/issues"
+  },
+  "homepage": "https://github.com/krsjan/framsia",
+  "dependencies": {
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}

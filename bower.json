@@ -1,0 +1,26 @@
+{
+  "name": "framsia",
+  "version": "0.0.0",
+  "homepage": "https://github.com/krsjan/framsia",
+  "authors": [
+    "Kristian Saksvik Munkvold <ksm@computas.no>"
+  ],
+  "description": "A front-end package for easy development",
+  "main": "server.js",
+  "license": "None",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dev/assets/lib/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "less": "*",
+    "bootstrap": "*",
+    "jquery": "~2.1.0",
+    "requirejs": "~2.1.10"
+  }
+}
