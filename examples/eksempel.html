@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Et verktøybelte for framsia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Et verktøybelte for framsia">
+    <meta name="author" content="krsjan">
+    <link rel="stylesheet" type="text/css" href="assets/lib/bower/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet/less" type="text/css" href="assets/less/app.less">
+    <script>
+      less = {
+        env: "development",
+        async: true,
+        fileAsync: true,
+        poll: 1000,
+        logLevel: 0,
+        relativeUrls: false
+      };
+    </script>
+    <script src="assets/lib/bower/less/dist/less-1.6.1.js" type="text/javascript"></script>
+    <script data-main="src/ComputasDagen.js" src="assets/lib/bower/requirejs/require.js"></script>
+    <script>less.watch();</script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-xs-6"><img src="assets/img/computas.png" alt="Computas Logo"></div>
+          <div class="col-lg-9 col-md-8 col-xs-6">
+            <h1 class="hidden-xs">Et verktøybelte for framsia</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="subtop" class="visible-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Et verktøybelte for framsia</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="content">
+              <h2 id="title">It should be easy to create front-end web applications</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <blockquote>
+              <p>“Create with the heart; build with the mind.” </p>
+              <footer>
+                <cite title="Criss Jami">Criss Jami</cite>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <h4 class="text-right"><small>Av Kristian Saksvik Munkvold</small></h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

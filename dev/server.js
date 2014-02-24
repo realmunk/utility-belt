@@ -27,8 +27,12 @@ app.get('/hei', function (req, res) {
   }); 
 }); 
 
-app.get('/REST/MOVIES/:type', function (req, res) {
-  res.sendfile(__dirname + '/STUB/frozen.json');
+app.get('/REST/movie/:type', function (req, res) {
+  res.sendfile(__dirname + '/STUB/donnie-darko.json');
+});
+
+app.get('/REST/series/:type', function (req, res) {
+  res.sendfile(__dirname + '/STUB/walking-dead.json');
 });
 
 app.listen(port);

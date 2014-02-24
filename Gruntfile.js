@@ -4,22 +4,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     
-    copy: {
-      main: {
-        expand: true,
-        cwd: 'dev/',
-        src: [
-          'assets/img/*',
-          'src/*'
-        ],
-        dest: 'prod/',
-        filter: 'isFile'
-      },
-      requirejs: {
-        src: 'dev/assets/lib/bower/requirejs/require.js',
-        dest: 'prod/assets/lib/require.js'
-      }
-    },
     jade: {
       build: {
         options: {
@@ -43,15 +27,10 @@ module.exports = function(grunt) {
         }
       }
     },
-    clean: {
-      build: {
-        src: ['prod']
-      }
-    },
     less: {
       build: {
         options: {
-          cleancss: true
+          pretty: true
         },
         files: [
           { 
@@ -76,13 +55,11 @@ module.exports = function(grunt) {
     }
   });
   
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   
-  grunt.registerTask('build', ['clean', 'jade', 'less', 'copy', 'concat', 'requirejs']);
+  grunt.registerTask('build', ['jade', 'less', 'concat', 'requirejs']);
 };

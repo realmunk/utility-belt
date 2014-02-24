@@ -5830,4 +5830,83 @@ td.visible-print {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
-html,body{width:100%;height:100%;font-family:Verdana,Helvetica,Arial,sans-serif;text-align:center}h1{font-family:'Roboto Thin',sans-serif;color:'Roboto Thin',sans-serif;color:#fff;text-shadow:0em 0em .07em #000;font-size:1.5em;text-transform:uppercase}h2,h3,h4,h5,h6{font-family:'Roboto Thin',sans-serif}li>a{text-transform:uppercase}.page{display:table;width:100%;height:auto;min-height:100%;margin:0;padding-top:100px}.top-spacing{margin-top:30px}#title{display:none}header{height:100px;border-bottom:1px solid #333;background:#26393d;vertical-align:middle}header h1{margin-top:35px}header img{margin-top:18px}#subtop{background:#40627c;padding:20px}#subtop h1{margin:0;text-align:left}#content{text-align:center;padding:10px;color:#000}#footer{background:#40627c;position:fixed;bottom:0;left:0;right:0;padding:20px;text-align:left;color:#fff}#footer small{color:#fff}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Verdana', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+h1 {
+  font-family: 'Roboto Thin', sans-serif;
+  color: 'Roboto Thin', sans-serif;
+  color: #ffffff;
+  text-shadow: 0.0em 0.0em 0.07em #000;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Thin', sans-serif;
+}
+li > a {
+  text-transform: uppercase;
+}
+.page {
+  display: table;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  margin: 0;
+  padding-top: 100px;
+}
+.top-spacing {
+  margin-top: 30px;
+}
+#title {
+  display: none;
+}
+#content {
+  word-wrap: break-word;
+}
+header {
+  height: 100px;
+  border-bottom: 1px solid #333333;
+  background: #26393d;
+  vertical-align: middle;
+}
+header h1 {
+  margin-top: 35px;
+}
+header img {
+  margin-top: 18px;
+}
+#subtop {
+  background: #40627c;
+  padding: 20px;
+}
+#subtop h1 {
+  margin: 0;
+  text-align: left;
+}
+#content {
+  text-align: center;
+  padding: 10px;
+  color: #000000;
+}
+#footer {
+  background: #40627c;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  text-align: left;
+  color: #ffffff;
+}
+#footer small {
+  color: #ffffff;
+}

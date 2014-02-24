@@ -13,11 +13,4 @@ require.config({
   }
 });
 
-require(
-  [
-    'utilityBelt'
-  ],
-  function (utilityBelt) {
-
-  }
-);
+require(['utilityBelt']);

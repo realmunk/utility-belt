@@ -1,4 +1,4 @@
-
+ead.
 // Vise package.json
 
 npm install
@@ -10,9 +10,10 @@ bower install jquery --save
 bower update
 
 // vise frem jade
-Se på en index.html ... og hvordan den kan brytes opp.
+Se på eksempel index.html ... og hvordan den kan brytes opp.
 
 // vise frem less
+Se på eksempel eksempel.css
 scheme.less
 
 // vise fram require.js
@@ -26,3 +27,6 @@ grunt watch
 
 // vise frem byggingen av en app
 grunt build
+
+// vise frem hvordan man kan kjøre prod-versjonen
+npm run-script prod
