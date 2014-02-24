@@ -9,8 +9,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "jade": "*",
     "bower": "*",
     "express": "*",
+    "karma": "*",
     "grunt": "*",
     "grunt-cli": "*",
     "grunt-contrib-jade": "*",
@@ -18,7 +20,7 @@
     "grunt-contrib-watch": "0.5.3",
     "grunt-contrib-clean": "*",
     "grunt-contrib-requirejs": "*",
-    "jade": "*",
+    "grunt-contrib-concat": "~0.3.0",
     "supervisor": "*"
   },
   "repository": {
@@ -29,8 +31,5 @@
   "bugs": {
     "url": "https://github.com/krsjan/framsia/issues"
   },
-  "homepage": "https://github.com/krsjan/framsia",
-  "dependencies": {
-    "grunt-contrib-concat": "~0.3.0"
-  }
+  "homepage": "https://github.com/krsjan/framsia"
 }
