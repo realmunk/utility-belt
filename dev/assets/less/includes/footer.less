@@ -1,9 +1,5 @@
-#footer {
+.footer {
   background: @color2;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 20px;
   text-align: left;
   color: @color3;
@@ -11,3 +7,20 @@
     color: @color3;
   }
 }
+
+
+#footer {
+  .footer
+}
+
+
+@media (min-width: 768px) {
+  #footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .footer
+  }
+}
+

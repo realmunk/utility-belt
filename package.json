@@ -2,13 +2,13 @@
   "name": "utility-belt-for-front-end",
   "version": "1.0.0",
   "description": "Demonstration package for an utility-belt. Made especially for front-end developers.",
-  "main": "server.js",
+  "main": "dev/dev.js",
   "scripts": {
-    "start": "supervisor -w dev/server.js dev/server.js",
+    "start": "supervisor -w dev/dev.js dev/dev.js",
     "watch": "grunt watch",
     "build": "grunt build",
-    "prod": "supervisor -w prod/server.js prod/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "supervisor -w prod/prod.js prod/prod.js",
+    "test": "echo \"Error: no test specified. Consider implementing karma (http://karma-runner.github.io/0.10/index.html)\" && exit 1"
   },
   "devDependencies": {
     "jade": "*",
@@ -21,17 +21,17 @@
     "grunt-contrib-watch": "0.5.3",
     "grunt-contrib-clean": "*",
     "grunt-contrib-requirejs": "*",
-    "grunt-contrib-copy": "~0.3.0",
+    "grunt-contrib-copy": "*",
     "grunt-contrib-concat": "~0.3.0",
     "supervisor": "*"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/krsjan/framsia.git"
+    "url": "https://github.com/krsjan/utility-belt.git"
   },
   "author": "Krsjan",
   "bugs": {
-    "url": "https://github.com/krsjan/framsia/issues"
+    "url": "https://github.com/krsjan/utility-belt/issues"
   },
-  "homepage": "https://github.com/krsjan/framsia"
+  "homepage": "https://github.com/krsjan/utility-belt"
 }

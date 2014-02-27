@@ -3,7 +3,35 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    
+
+    copy: {
+      main: {
+        expand: true,
+        cwd: 'dev/',
+        src: [
+          'assets/img/*'
+        ],
+        dest: 'prod/',
+        filter: 'isFile'
+      },
+      requirejs: {
+        src: 'dev/assets/lib/bower/requirejs/require.js',
+        dest: 'prod/assets/lib/require.js'
+      },
+      // if you have a real server to deploy to environment ... the following copy-jobs will not be necessary
+      stub: {
+        expand: true,
+        cwd: 'dev/',
+        src: 'STUB/*',
+        dest: 'prod/',
+        filter: 'isFile'
+      },
+      server: {
+        src: 'conf/prod.js',
+        dest: 'prod/prod.js'
+      }
+
+    }, 
     jade: {
       build: {
         options: {
@@ -21,16 +49,21 @@ module.exports = function(grunt) {
       build: {
         options: {
           baseUrl: "dev",
-          mainConfigFile: "dev/src/ComputasDagen.js",
+          mainConfigFile: "dev/src/RequireConfig.js",
           name: 'src/UtilityBelt',
           out: "prod/src/UtilityBelt.js"
         }
       }
     },
+    clean: {
+      build: {
+        src: ['prod']
+      }
+    },
     less: {
       build: {
         options: {
-          pretty: true
+          cleancss: true
         },
         files: [
           { 
@@ -60,6 +93,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
-  
-  grunt.registerTask('build', ['jade', 'less', 'concat', 'requirejs']);
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+
+  grunt.registerTask('build', ['clean', 'jade', 'less', 'copy', 'concat', 'requirejs']);
 };

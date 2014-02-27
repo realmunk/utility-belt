@@ -1,10 +1,12 @@
-title Et verktøybelte for framsia
+title An utility-belt for front-end
 meta(charset='utf-8')
 meta(name='viewport', content='width=device-width, initial-scale=1.0')
-meta(name='description', content='Et verktøybelte for framsia')
+meta(name='description', content='A utility-belt for front-end')
 meta(name='author', content='krsjan')
+//- If we are in developer mode, lets load our files for that.
 if developing
   link(rel='stylesheet', type='text/css', href='assets/lib/bower/bootstrap/dist/css/bootstrap.min.css')
+  //- stylesheet/less is only supported if you import the Less.JS library.
   link(rel='stylesheet/less', type='text/css', href='assets/less/app.less')
   script.
     less = {
@@ -16,9 +18,11 @@ if developing
       relativeUrls: false
     };
   script(src='assets/lib/bower/less/dist/less-1.6.1.js', type='text/javascript')
-  script(data-main="src/ComputasDagen.js", src='assets/lib/bower/requirejs/require.js')
+  //- OK. Instead of compiling to CSS locally and loading a new file, we let less.js watch for changes. It will compile in realtime in-browser.
   script.
     less.watch();
-else 
+  script(data-main="src/RequireConfig.js", src='assets/lib/bower/requirejs/require.js')
+else
+  //- Production mode. One CSS. One JS. One Library.
   script(data-main="src/UtilityBelt.js", src='assets/lib/require.js')
   link(rel='stylesheet', type='text/css', href='assets/css/app.css')
