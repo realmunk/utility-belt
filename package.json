@@ -15,14 +15,13 @@
     "bower": "*",
     "express": "*",
     "grunt": "*",
-    "grunt-cli": "*",
     "grunt-contrib-jade": "*",
-    "grunt-contrib-less": "0.9.0",
-    "grunt-contrib-watch": "0.5.3",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-requirejs": "*",
     "grunt-contrib-copy": "*",
-    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-concat": "*",
     "supervisor": "*"
   },
   "repository": {
