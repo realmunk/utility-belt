@@ -20,8 +20,8 @@ To get the environment up and running, follow this ecipe:
   1. NodeJS. Get it at http://www.nodejs.org
   2. After getting node up and running. Open your command line.
   3. Lets install some global packages.
-    3.1. First off we need grunt-cli. Type: npm install grunt-cli -g
-    3.2. Then supervisor. Type: npm install supervisor -g
+  3.1. First off we need grunt-cli. Type: npm install grunt-cli -g
+  3.2. Then supervisor. Type: npm install supervisor -g
   4. Now, we're ready to get our last set of dependencies. Go to the folder where you have cloned this repository.
   4. Type "npm install". Now you will have everything you need to develop on this project.
 
